@@ -1,0 +1,133 @@
+:root {
+  --black: #222222;
+  --pink-bkg: #f1e4e6;
+  --pink-text: #f1808f;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: "lato";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--black);
+}
+.header__logo {
+  margin: 0 41px 0 0;
+}
+
+.header__button {
+  background-color: transparent;
+  border: 0;
+}
+.header__link {
+  margin: 0 0 0 33px;
+}
+
+.header__wrp {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center;
+}
+
+.header__menu {
+  display: none;
+}
+
+.brand {
+  display: flex;
+  margin: 0 0 63px;
+}
+
+.brand__title-wrp {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 92px;
+  background-color: var(--pink-bkg);
+  flex-grow: 1;
+}
+
+.brand__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.brand__sub-title {
+  display: block;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--black);
+}
+
+.brand__sub-title-pink {
+  color: var(--pink-text);
+}
+
+.sales__item {
+  width: 360px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sales__item-woman {
+  background-image: url(../img/sale-w.png);
+}
+
+.sales__item-man {
+  background-image: url(../img/sale-m.png);
+}
+
+.sales__item-kids {
+  background-image: url(../img/sale-k.png);
+}
+
+.sales__item-shoes {
+  background-image: url(../img/sale-accesories.png);
+  width: 100%;
+}
+
+.sales__item-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.sales__item-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.sales__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
