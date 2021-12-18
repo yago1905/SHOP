@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <title>registration</title>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrp">
+          <div>
+            <a href="#"
+              ><img class="header__logo" src="img/logo.svg" alt="logo"
+            /></a>
+            <img class="header__search" src="img/poisk.svg" alt="poisk" />
+          </div>
+          <div class="header__nav-group">
+            <button class="header__button" type="button">
+              <img src="img/burger.svg" alt="burger" />
+            </button>
+            <a class="header__link" href="#"
+              ><img src="img/person.svg" alt="person"
+            /></a>
+            <a class="header__link" href="#"
+              ><img src="img/bag.svg" alt="bag"
+            /></a>
+          </div>
+        </div>
+        <nav class="header__menu">
+          <h2 class="header__menu-title">menu</h2>
+          <ul class="header__menu-list">
+            <li class="header__menu-item menu-sub-item">
+              <h3 class="menu-sub-item__title">man</h3>
+              <ul class="menu-sub-item__list">
+                <li>
+                  <a class="menu-sub-item__item-link" href="#">Accessories</a>
+                </li>
+                <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
+                <li><a class="menu-sub-item__item-link" href="#">Denim</a></li>
+                <li>
+                  <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>woman</h3>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>kids</h3>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Bags</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="category">
+        <h2 class="visually-hidden">registration</h2>
+        <div class="category__title-wrp container">
+          <h1 class="category__title">registration</h1>
+        </div>
+      </section>
+      <section class="container form-registration">
+        <h2 class="visually-hidden">form-registration</h2>
+        <div class="registration__input">
+          <form action="#">
+            <div class="registration__name">
+              Your Name
+              <input
+                type="text"
+                class="registration__box"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                class="registration__box"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="registration__radio">
+              <input
+                type="radio"
+                id="Male"
+                name="interest"
+                value="Male"
+                checked
+              />
+              <label for="Male">Male</label>
+              <input type="radio" id="Female" name="interest" value="Female" />
+              <label for="music">Female</label>
+            </div>
+
+            <div class="registration__name">Login details</div>
+            <input type="email" class="registration__box" placeholder="Email" />
+            <input
+              type="password"
+              class="registration__box"
+              placeholder="Password"
+            />
+            <p class="registration__text">
+              Please use 8 or more characters, with at least 1 number and a
+              mixture of uppercase and lowercase letters
+            </p>
+            <div><button type="button" class="join-now">join now</button></div>
+          </form>
+        </div>
+        <ul>
+          <li>loyalty has its perks</li>
+          <li>
+            <p>
+              Get in on the loyalty program where you can earn points and unlock
+              serious perks. Starting with these as soon as you join:
+            </p>
+          </li>
+          <li><p>15% off welcome offer</p></li>
+          <li><p>Free shipping, returns and exchanges on all orders</p></li>
+          <li><p>$10 off a purchase on your birthday</p></li>
+          <li><p>Early access to products</p></li>
+          <li><p>Exclusive offers & rewards</p></li>
+        </ul>
+      </section>
+      <footer>
+        <section class="subscription">
+          <ul class="footer__subscription container">
+            <li class="footer__subscription-avatar">
+              <img src="img/avatar.png" alt="avatar" />
+              <p class="footer__subscription-feedback">
+                "vestibulum quis porttitor dui! quisque viverra nunc mi, a
+                pulvinar purus condimentum"
+              </p>
+            </li>
+            <li class="footer__subscription-form">
+              <h2 class="footer__subscription-title">subscribe</h2>
+              <p class="footer__subscription-text">
+                for our newletter and promotion
+              </p>
+              <form action="#">
+                <input type="text" placeholder="enter your email" />
+                <button type="submit">subscribe</button>
+              </form>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <ul class="footer__copyright container">
+            <li class="footer__copyright-text">
+              <p>&copy;&nbsp;2021 brand all rights reserved.</p>
+            </li>
+            <li class="footer__copyright-icons">
+              <a href="#"><img src="img/face-book.png" alt="face-book" /></a>
+              <a href="#"><img src="img/inst.png" alt="instagram" /></a>
+              <a href="#"><img src="img/pintirest.png" alt="pintirest" /></a>
+              <a href="#"><img src="img/twitter.png" alt="twitter" /></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>

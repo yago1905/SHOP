@@ -31,6 +31,7 @@ body {
 .header {
   background: var(--black);
 }
+
 .header__logo {
   margin: 0 41px 0 0;
 }
@@ -39,6 +40,7 @@ body {
   background-color: transparent;
   border: 0;
 }
+
 .header__link {
   margin: 0 0 0 33px;
 }
@@ -73,6 +75,7 @@ body {
   line-height: 58px;
   color: var(--black);
   text-transform: uppercase;
+  position: relative;
 }
 
 .brand__sub-title {
@@ -164,6 +167,9 @@ body {
 .prodocts__item {
   width: 360px;
   background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .prodocts__item-title {
@@ -173,6 +179,7 @@ body {
   text-transform: uppercase;
   margin: 20px 18px 12px;
 }
+
 .prodocts__item-desc {
   font-size: 14px;
   line-height: 17px;
@@ -238,6 +245,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .footer__subscription {
   display: flex;
   align-items: center;
@@ -284,18 +292,111 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
 .copyright {
   background: var(--black);
   height: 79px;
   display: flex;
 }
+
 .footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .footer__copyright-text {
   font-size: 16px;
   line-height: 19px;
   color: #fbfbfb;
+}
+
+.brand__title::after {
+  content: "";
+  width: 12px;
+  height: 100%;
+  background: #f16d7f;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+}
+
+.prodocts__item-fon:hover::after {
+  content: url(../img/products-back-img.png);
+  position: absolute;
+}
+
+.header__button:active {
+  content: "";
+  opacity: 0.5;
+}
+
+/*Страница Регистрации*/
+.category {
+  background-color: var(--pink-bkg);
+  height: 148px;
+  display: flex;
+  align-items: center;
+}
+
+.category__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+.form-registration {
+  display: flex;
+  padding: 64px 0 96px 0;
+}
+
+.registration__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__box {
+  width: 360px;
+  border: 1px solid #a4a4a4;
+  margin: 20px 0 0 0;
+  padding: 13px 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration__radio {
+  padding: 32px 0 32px 0;
+}
+
+.join-now {
+  background: #f16d7f;
+  border: none;
+  text-transform: uppercase;
+  padding: 16px 66px 16px 30px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.registration__text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+  width: 360px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
