@@ -39,10 +39,23 @@ body {
 .header__button {
   background-color: transparent;
   border: 0;
+  position: relative;
+}
+
+.icon {
+  fill: white;
+}
+
+.header__button:active {
+  opacity: 0.5;
 }
 
 .header__link {
   margin: 0 0 0 33px;
+}
+
+.header__link:active {
+  opacity: 0.5;
 }
 
 .header__wrp {
@@ -202,6 +215,10 @@ body {
   margin-bottom: 95px;
 }
 
+.button:active {
+  background-color: #f16d7f;
+}
+
 .advantages {
   background: var(--black);
   height: 340px;
@@ -321,14 +338,78 @@ body {
   top: 0px;
 }
 
-.prodocts__item-fon:hover::after {
-  content: url(../img/products-back-img.png);
+.overlay {
+  width: 100%;
+  min-height: 420px;
+  background: rgba(58, 56, 56, 0.86);
   position: absolute;
+  top: 0;
 }
 
-.header__button:active {
-  content: "";
-  opacity: 0.5;
+.button__123 {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 138px;
+  height: 43px;
+  background: none;
+  text-transform: capitalize;
+}
+
+.overlay,
+.button__123 {
+  display: none;
+}
+
+.prodocts__item:hover .button__123,
+.prodocts__item:hover .overlay,
+.prodocts__item:hover .cart-wrapper-overlay:before {
+  display: block;
+}
+
+.icons-social {
+  width: 20px;
+  height: 20px;
+  fill: black;
+  padding: 8px 12px;
+  background-color: white;
+}
+
+.icons-social:hover {
+  fill: white;
+
+  background: #f16d7f;
+}
+
+/* подписка footer */
+
+.footer__subscription--form {
+  display: flex;
+}
+
+.footer__subscription--mail {
+  width: 256px;
+  height: 50px;
+  padding-left: 22px;
+  background: #e1e1e1;
+  border-radius: 30px 0 0 30px;
+  border: none;
+}
+
+.footer__subscription--submit {
+  background: #f16d7f;
+  border-radius: 0px 30px 30px 0px;
+  border: none;
+  padding: 9px 9px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  width: 100px;
 }
 
 /*Страница Регистрации*/
@@ -389,6 +470,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  position: relative;
 }
 
 .registration__text {
@@ -399,4 +481,43 @@ body {
   width: 360px;
   margin-top: 15px;
   margin-bottom: 40px;
+}
+
+.loyalty {
+  padding-left: 128px;
+}
+
+.loyalty__list--title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+
+.loyalty__wrp {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 22px;
+}
+
+.loyalty__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  padding-left: 22px;
+}
+
+.loyalty__list {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.join-now::after {
+  content: url(../img/stelka.png);
+  height: 100%;
+  position: absolute;
+  left: 120px;
 }
