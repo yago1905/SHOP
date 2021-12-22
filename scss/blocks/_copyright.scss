@@ -1,0 +1,27 @@
+.copyright {
+    background: $black;
+    height: 79px;
+    display: flex;
+  }
+  
+  .footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__copyright-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fbfbfb;
+  }
+  
+  .brand__title::after {
+    content: "";
+    width: 12px;
+    height: 100%;
+    background: #f16d7f;
+    position: absolute;
+    left: -20px;
+    top: 0px;
+  }

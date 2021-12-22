@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +38,83 @@
                 />
               </svg>
             </button>
+
+            <nav class="header__menu">
+              <h2 class="header__menu-title">menu</h2>
+              <ul class="header__menu-list">
+                <li class="header__menu-item menu-sub-item">
+                  <h3 class="menu-sub-item__title">man</h3>
+                  <ul class="menu-sub-item__list">
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Bags</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Denim</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="menu-sub-item__title">woman</h3>
+                  <ul class="menu-sub-item__list">
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Jackets & Coats</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Polos</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Shirts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="menu-sub-item__title">kids</h3>
+                  <ul class="menu-sub-item__list">
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Jackets & Coats</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Polos</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Shirts</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Bags</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
             <a class="header__link" href="registration.html"
               ><svg
                 class="icon"
@@ -67,45 +143,6 @@
             </a>
           </div>
         </div>
-        <nav class="header__menu">
-          <h2 class="header__menu-title">menu</h2>
-          <ul class="header__menu-list">
-            <li class="header__menu-item menu-sub-item">
-              <h3 class="menu-sub-item__title">man</h3>
-              <ul class="menu-sub-item__list">
-                <li>
-                  <a class="menu-sub-item__item-link" href="#">Accessories</a>
-                </li>
-                <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
-                <li><a class="menu-sub-item__item-link" href="#">Denim</a></li>
-                <li>
-                  <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>woman</h3>
-              <ul>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Jackets & Coats</a></li>
-                <li><a href="#">Polos</a></li>
-                <li><a href="#">T-Shirts</a></li>
-                <li><a href="#">Shirts</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3>kids</h3>
-              <ul>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Jackets & Coats</a></li>
-                <li><a href="#">Polos</a></li>
-                <li><a href="#">T-Shirts</a></li>
-                <li><a href="#">Shirts</a></li>
-                <li><a href="#">Bags</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -296,12 +333,13 @@
             <p class="footer__subscription-text">
               for our newletter and promotion
             </p>
-            <form class="footer__subscription--form" action="#">
-              <input
-                class="footer__subscription--mail"
-                type="email"
-                placeholder="enter your email"
-              />
+            <form class="footer__subscription-form--box" action="#">
+              <label for="email"
+                ><input
+                  class="footer__subscription--mail"
+                  type="email"
+                  placeholder="enter your email"
+              /></label>
               <button class="footer__subscription--submit" type="submit">
                 subscribe
               </button>

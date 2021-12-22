@@ -113,22 +113,22 @@
         </div>
       </section>
       <section class="container form-registration">
-        <h2 class="visually-hidden">form-registration</h2>
-        <div class="registration__input">
+        <fieldset class="registration__input">
+          <legend class="visually-hidden">form-registration</legend>
+          <label class="registration__name">Your Name</label>
           <form action="#">
-            <div class="registration__name">
-              Your Name
-              <input
-                type="text"
-                class="registration__box"
-                placeholder="First Name"
-              />
-              <input
-                type="text"
-                class="registration__box"
-                placeholder="Last Name"
-              />
-            </div>
+            <input
+              type="text"
+              class="registration__box"
+              placeholder="First Name"
+            />
+          </form>
+          <form action="#">
+            <input
+              type="text"
+              class="registration__box"
+              placeholder="First Name"
+            />
             <div class="registration__radio">
               <input
                 type="radio"
@@ -141,8 +141,7 @@
               <input type="radio" id="Female" name="interest" value="Female" />
               <label for="music">Female</label>
             </div>
-
-            <div class="registration__name">Login details</div>
+            <label class="registration__name">Login details</label>
             <input type="email" class="registration__box" placeholder="Email" />
             <input
               type="password"
@@ -155,7 +154,8 @@
             </p>
             <div><button type="submit" class="join-now">join now</button></div>
           </form>
-        </div>
+        </fieldset>
+
         <div class="loyalty">
           <h2 class="loyalty__list--title">loyalty has its perks</h2>
           <p class="loyalty__wrp">
@@ -203,7 +203,7 @@
               <p class="footer__subscription-text">
                 for our newletter and promotion
               </p>
-              <form class="footer__subscription--form" action="#">
+              <form class="footer__subscription-form--box" action="#">
                 <input
                   class="footer__subscription--mail"
                   type="text"
