@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +27,7 @@
           <div class="header__nav-group">
             <button class="header__button" type="button">
               <svg
-                class="icon"
+                class="header__icon"
                 width="32"
                 height="23"
                 viewBox="0 0 32 23"
@@ -39,9 +38,85 @@
                 />
               </svg>
             </button>
+            <nav class="header__menu">
+              <h2 class="header__menu-title">menu</h2>
+              <ul class="header__menu-list">
+                <li class="header__menu-item menu-sub-item">
+                  <h3 class="menu-sub-item__title">man</h3>
+                  <ul class="menu-sub-item__list">
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Bags</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Denim</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="menu-sub-item__title">woman</h3>
+                  <ul class="menu-sub-item__list">
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Jackets & Coats</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Polos</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Shirts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="menu-sub-item__title">kids</h3>
+                  <ul class="menu-sub-item__list">
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#"
+                        >Jackets & Coats</a
+                      >
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Polos</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Shirts</a>
+                    </li>
+                    <li>
+                      <a class="menu-sub-item__item-link" href="#">Bags</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
             <a class="header__link" href="registration.html"
               ><svg
-                class="icon"
+                class="header__icon"
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
@@ -54,7 +129,7 @@
             </a>
             <a class="header__link" href="#"
               ><svg
-                class="icon"
+                class="header__icon"
                 width="32"
                 height="29"
                 viewBox="0 0 32 29"
@@ -67,45 +142,6 @@
             </a>
           </div>
         </div>
-        <nav class="header__menu">
-          <h2 class="header__menu-title">menu</h2>
-          <ul class="header__menu-list">
-            <li class="header__menu-item menu-sub-item">
-              <h3 class="menu-sub-item__title">man</h3>
-              <ul class="menu-sub-item__list">
-                <li>
-                  <a class="menu-sub-item__item-link" href="#">Accessories</a>
-                </li>
-                <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
-                <li><a class="menu-sub-item__item-link" href="#">Denim</a></li>
-                <li>
-                  <a class="menu-sub-item__item-link" href="#">T-Shirts</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>woman</h3>
-              <ul>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Jackets & Coats</a></li>
-                <li><a href="#">Polos</a></li>
-                <li><a href="#">T-Shirts</a></li>
-                <li><a href="#">Shirts</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3>kids</h3>
-              <ul>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Jackets & Coats</a></li>
-                <li><a href="#">Polos</a></li>
-                <li><a href="#">T-Shirts</a></li>
-                <li><a href="#">Shirts</a></li>
-                <li><a href="#">Bags</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -163,7 +199,7 @@
               />
             </div>
             <div class="overlay"></div>
-            <button type="button" class="button__123">add to cart</button>
+            <button type="button" class="overlay__button">add to cart</button>
             <h3 class="products__item-title">ellery x m'o capsule</h3>
             <p class="products__item-desc">
               Known for her sculptural takes on traditional tailoring,
@@ -178,7 +214,7 @@
               alt="fetured-2"
             />
             <div class="overlay"></div>
-            <button type="button" class="button__123">add to cart</button>
+            <button type="button" class="overlay__button">add to cart</button>
             <h3 class="products__item-title">ellery x m'o capsule</h3>
             <p class="products__item-desc">
               Known for her sculptural takes on traditional tailoring,
@@ -193,7 +229,7 @@
               alt="fetured-3"
             />
             <div class="overlay"></div>
-            <button type="button" class="button__123">add to cart</button>
+            <button type="button" class="overlay__button">add to cart</button>
             <h3 class="products__item-title">ellery x m'o capsule</h3>
             <p class="products__item-desc">
               Known for her sculptural takes on traditional tailoring,
@@ -208,7 +244,7 @@
               alt="fetured-4"
             />
             <div class="overlay"></div>
-            <button type="button" class="button__123">add to cart</button>
+            <button type="button" class="overlay__button">add to cart</button>
             <h3 class="products__item-title">ellery x m'o capsule</h3>
             <p class="products__item-desc">
               Known for her sculptural takes on traditional tailoring,
@@ -223,7 +259,7 @@
               alt="fetured-5"
             />
             <div class="overlay"></div>
-            <button type="button" class="button__123">add to cart</button>
+            <button type="button" class="overlay__button">add to cart</button>
             <h3 class="products__item-title">ellery x m'o capsule</h3>
             <p class="products__item-desc">
               Known for her sculptural takes on traditional tailoring,
@@ -238,7 +274,7 @@
               alt="fetured-6"
             />
             <div class="overlay"></div>
-            <button type="button" class="button__123">add to cart</button>
+            <button type="button" class="overlay__button">add to cart</button>
             <h3 class="products__item-title">ellery x m'o capsule</h3>
             <p class="products__item-desc">
               Known for her sculptural takes on traditional tailoring,
@@ -283,26 +319,27 @@
     </main>
     <footer>
       <section class="subscription">
-        <ul class="footer__subscription container">
-          <li class="footer__subscription-avatar">
+        <ul class="subscription__footer container">
+          <li class="subscription__footer-avatar">
             <img src="img/avatar.png" alt="avatar" />
-            <p class="footer__subscription-feedback">
+            <p class="subscription__footer-feedback">
               "vestibulum quis porttitor dui! quisque viverra nunc mi, a
               pulvinar purus condimentum"
             </p>
           </li>
-          <li class="footer__subscription-form">
-            <h2 class="footer__subscription-title">subscribe</h2>
-            <p class="footer__subscription-text">
+          <li class="subscription__footer-form">
+            <h2 class="subscription__footer-title">subscribe</h2>
+            <p class="subscription__footer-text">
               for our newletter and promotion
             </p>
-            <form class="footer__subscription--form" action="#">
-              <input
-                class="footer__subscription--mail"
-                type="email"
-                placeholder="enter your email"
-              />
-              <button class="footer__subscription--submit" type="submit">
+            <form class="subscription__footer-form--box" action="#">
+              <label for="email"
+                ><input
+                  class="subscription__footer--mail"
+                  type="email"
+                  placeholder="enter your email"
+              /></label>
+              <button class="subscription__footer--submit" type="submit">
                 subscribe
               </button>
             </form>
@@ -310,11 +347,11 @@
         </ul>
       </section>
       <section class="copyright">
-        <ul class="footer__copyright container">
-          <li class="footer__copyright-text">
+        <ul class="copyright__footer container">
+          <li class="copyright__footer-text">
             <p>&copy;&nbsp;2021 brand all rights reserved.</p>
           </li>
-          <li class="footer__copyright-icons">
+          <li class="copyright__footer-icons">
             <a href="#">
               <svg
                 class="icons-social"

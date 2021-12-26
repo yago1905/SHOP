@@ -1,0 +1,17 @@
+.copyright {
+    background: $black;
+    height: 79px;
+    display: flex;
+  }
+  
+  .copyright__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright__footer-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fbfbfb;
+  }

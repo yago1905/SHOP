@@ -1,0 +1,42 @@
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+  }
+  
+  .brand__title-wrp {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+    background-color: $pink-bkg;
+    flex-grow: 1;
+  }
+  
+  .brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    color: $black;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .brand__sub-title {
+    display: block;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+  }
+  
+  .brand__sub-title-pink {
+    color: $pink-text;
+  }
+  
+  .brand__title::after {
+    content: "";
+    width: 12px;
+    height: 100%;
+    background: #f16d7f;
+    position: absolute;
+    left: -20px;
+    top: 0px;
+  }

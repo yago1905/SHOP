@@ -1,0 +1,14 @@
+.category {
+    background-color: $pink-bkg;
+    height: 148px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .category__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+    text-transform: uppercase;
+  }
