@@ -25,7 +25,7 @@
           <div class="header__nav-group">
             <button class="header__button" type="button">
               <svg
-                class="icon"
+                class="header__icon"
                 width="32"
                 height="23"
                 viewBox="0 0 32 23"
@@ -38,7 +38,7 @@
             </button>
             <a class="header__link" href="registration.html"
               ><svg
-                class="icon"
+                class="header__icon"
                 width="29"
                 height="29"
                 viewBox="0 0 29 29"
@@ -51,7 +51,7 @@
             </a>
             <a class="header__link" href="#"
               ><svg
-                class="icon"
+                class="header__icon"
                 width="32"
                 height="29"
                 viewBox="0 0 32 29"
@@ -112,7 +112,7 @@
           <h1 class="category__title">registration</h1>
         </div>
       </section>
-      <section class="container form-registration">
+      <section class="container registration">
         <fieldset class="registration__input">
           <legend class="visually-hidden">form-registration</legend>
           <label class="registration__name">Your Name</label>
@@ -156,9 +156,11 @@
           </form>
         </fieldset>
 
-        <div class="loyalty">
-          <h2 class="loyalty__list--title">loyalty has its perks</h2>
-          <p class="loyalty__wrp">
+        <div class="registration__loyalty">
+          <h2 class="registration__loyalty-list--title">
+            loyalty has its perks
+          </h2>
+          <p class="registration__loyalty-list--wrp">
             Get in on the loyalty program where you can earn points and unlock
             serious perks. Starting with these as soon as you join:
           </p>
@@ -190,26 +192,27 @@
       </section>
       <footer>
         <section class="subscription">
-          <ul class="footer__subscription container">
-            <li class="footer__subscription-avatar">
+          <ul class="subscription__footer container">
+            <li class="subscription__footer-avatar">
               <img src="img/avatar.png" alt="avatar" />
-              <p class="footer__subscription-feedback">
+              <p class="subscription__footer-feedback">
                 "vestibulum quis porttitor dui! quisque viverra nunc mi, a
                 pulvinar purus condimentum"
               </p>
             </li>
-            <li class="footer__subscription-form">
-              <h2 class="footer__subscription-title">subscribe</h2>
-              <p class="footer__subscription-text">
+            <li class="subscription__footer-form">
+              <h2 class="subscription__footer-title">subscribe</h2>
+              <p class="subscription__footer-text">
                 for our newletter and promotion
               </p>
-              <form class="footer__subscription-form--box" action="#">
-                <input
-                  class="footer__subscription--mail"
-                  type="text"
-                  placeholder="enter your email"
-                />
-                <button class="footer__subscription--submit" type="submit">
+              <form class="subscription__footer-form--box" action="#">
+                <label for="email"
+                  ><input
+                    class="subscription__footer--mail"
+                    type="email"
+                    placeholder="enter your email"
+                /></label>
+                <button class="subscription__footer--submit" type="submit">
                   subscribe
                 </button>
               </form>
@@ -217,11 +220,11 @@
           </ul>
         </section>
         <section class="copyright">
-          <ul class="footer__copyright container">
-            <li class="footer__copyright-text">
+          <ul class="copyright__footer container">
+            <li class="copyright__footer-text">
               <p>&copy;&nbsp;2021 brand all rights reserved.</p>
             </li>
-            <li class="footer__copyright-icons">
+            <li class="copyright__footer-icons">
               <a href="#">
                 <svg
                   class="icons-social"

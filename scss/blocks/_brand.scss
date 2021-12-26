@@ -30,3 +30,13 @@
   .brand__sub-title-pink {
     color: $pink-text;
   }
+  
+  .brand__title::after {
+    content: "";
+    width: 12px;
+    height: 100%;
+    background: #f16d7f;
+    position: absolute;
+    left: -20px;
+    top: 0px;
+  }

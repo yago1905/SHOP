@@ -4,24 +4,14 @@
     display: flex;
   }
   
-  .footer__copyright {
+  .copyright__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .footer__copyright-text {
+  .copyright__footer-text {
     font-size: 16px;
     line-height: 19px;
     color: #fbfbfb;
-  }
-  
-  .brand__title::after {
-    content: "";
-    width: 12px;
-    height: 100%;
-    background: #f16d7f;
-    position: absolute;
-    left: -20px;
-    top: 0px;
   }

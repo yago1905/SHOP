@@ -91,7 +91,7 @@ body {
   border: 0;
 }
 
-.icon {
+.header__icon {
   fill: white;
 }
 
@@ -159,6 +159,16 @@ body {
 
 .brand__sub-title-pink {
   color: #F1808F;
+}
+
+.brand__title::after {
+  content: "";
+  width: 12px;
+  height: 100%;
+  background: #f16d7f;
+  position: absolute;
+  left: -20px;
+  top: 0px;
 }
 
 .products {
@@ -319,7 +329,7 @@ body {
   top: 0;
 }
 
-.button__123 {
+.overlay__button {
   position: absolute;
   top: 36%;
   left: 50%;
@@ -336,11 +346,11 @@ body {
 }
 
 .overlay,
-.button__123 {
+.overlay__button {
   display: none;
 }
 
-.products__item:hover .button__123,
+.products__item:hover .overlay__button,
 .products__item:hover .overlay,
 .products__item:hover .cart-wrapper-overlay:before {
   display: block;
@@ -423,7 +433,7 @@ body {
   background-position: center;
 }
 
-.footer__subscription {
+.subscription__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,7 +444,7 @@ body {
       justify-content: space-around;
 }
 
-.footer__subscription-avatar {
+.subscription__footer-avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,7 +459,7 @@ body {
   gap: 30px;
 }
 
-.footer__subscription-form {
+.subscription__footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,7 +472,7 @@ body {
           flex-direction: column;
 }
 
-.footer__subscription-feedback {
+.subscription__footer-feedback {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -479,7 +489,7 @@ body {
   text-transform: uppercase;
 }
 
-.footer__subscription-text {
+.subscription__footer-text {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -489,13 +499,13 @@ body {
   margin-bottom: 30px;
 }
 
-.footer__subscription-form--box {
+.subscription__footer-form--box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer__subscription--mail {
+.subscription__footer--mail {
   width: 256px;
   height: 50px;
   padding-left: 22px;
@@ -504,7 +514,7 @@ body {
   border: none;
 }
 
-.footer__subscription--submit {
+.subscription__footer--submit {
   background: #f16d7f;
   border-radius: 0px 30px 30px 0px;
   border: none;
@@ -523,7 +533,7 @@ body {
   display: flex;
 }
 
-.footer__copyright {
+.copyright__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,20 +545,10 @@ body {
           align-items: center;
 }
 
-.footer__copyright-text {
+.copyright__footer-text {
   font-size: 16px;
   line-height: 19px;
   color: #fbfbfb;
-}
-
-.brand__title::after {
-  content: "";
-  width: 12px;
-  height: 100%;
-  background: #f16d7f;
-  position: absolute;
-  left: -20px;
-  top: 0px;
 }
 
 .category {
@@ -570,7 +570,7 @@ body {
   text-transform: uppercase;
 }
 
-.form-registration {
+.registration {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,11 +637,11 @@ body {
   margin-bottom: 40px;
 }
 
-.loyalty {
+.registration__loyalty {
   padding-left: 128px;
 }
 
-.loyalty__list--title {
+.registration__loyalty-list--title {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -650,7 +650,7 @@ body {
   padding-bottom: 22px;
 }
 
-.loyalty__wrp {
+.registration__loyalty-list--wrp {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;

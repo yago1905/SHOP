@@ -6,7 +6,7 @@
     top: 0;
   }
   
-  .button__123 {
+  .overlay__button {
     position: absolute;
     top: 36%;
     left: 50%;
@@ -22,11 +22,11 @@
   }
   
   .overlay,
-  .button__123 {
+  .overlay__button {
     display: none;
   }
   
-  .products__item:hover .button__123,
+  .products__item:hover .overlay__button,
   .products__item:hover .overlay,
   .products__item:hover .cart-wrapper-overlay:before {
     display: block;

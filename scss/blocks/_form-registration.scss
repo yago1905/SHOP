@@ -1,4 +1,4 @@
-.form-registration {
+.registration {
     display: flex;
     padding: 64px 0 96px 0;
   }
@@ -53,11 +53,11 @@
     margin-bottom: 40px;
   }
 
-  .loyalty {
+  .registration__loyalty {
     padding-left: 128px;
   }
   
-  .loyalty__list--title {
+  .registration__loyalty-list--title {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -66,7 +66,7 @@
     padding-bottom: 22px;
   }
   
-  .loyalty__wrp {
+  .registration__loyalty-list--wrp {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
