@@ -23,6 +23,15 @@
         justify-content: space-between;
         margin: 50px 0 50px;
         gap: 30px;
+
+        @include tablet{
+          gap: 14px;
+        }
+
+        @include mobile{
+          flex-direction: column;
+          align-content: center;
+        }
       }
       
       .products__item {

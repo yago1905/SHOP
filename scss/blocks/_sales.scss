@@ -5,6 +5,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+      width: 33%;
+      min-height: 167px;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-height: 247px;
+      margin: 32px 0 0 0;
+    }
   }
   
   .sales__item-woman {
