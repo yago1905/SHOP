@@ -22,10 +22,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 50px 0 50px;
-        gap: 30px;
+        width: 100%;
 
         @include tablet{
-          gap: 14px;
+          flex-wrap: wrap;
+          
+          .products__item--none {
+            display: none;
+          }
         }
 
         @include mobile{
@@ -35,11 +39,12 @@
       }
       
       .products__item {
-        width: 360px;
+        max-width: 360px;
         background: #f8f8f8;
         display: flex;
         flex-direction: column;
         position: relative;
+        margin-bottom: 30px;
       }
       
       .products__item-title {

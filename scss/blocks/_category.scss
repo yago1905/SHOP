@@ -12,3 +12,14 @@
     color: #f16d7f;
     text-transform: uppercase;
   }
+
+  .category__title-wrp {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

@@ -4,6 +4,7 @@
     min-height: 448px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #f2f2f2;
 
     @include tablet {
       background-repeat: no-repeat;
@@ -16,12 +17,12 @@
     align-items: center;
     justify-content: space-around;
 
-    @include tablet{
+    @include tablet {
       flex-direction: column;
       padding: 53px 0 140px;
     }
 
-    @include mobile{
+    @include mobile {
       flex-direction: column;
       padding: 53px 0 109px;
     }
@@ -37,6 +38,7 @@
   
   .subscription__footer-form {
     @include flex-center-column();
+    justify-content: center;
   }
   
   .subscription__footer-feedback {
@@ -82,6 +84,11 @@
 
   .subscription__footer-form--box {
     display: flex;
+
+    @include mobile {
+      width: 250px;
+      justify-content: space-around;
+    }
   }
   
   .subscription__footer--mail {

@@ -23,12 +23,14 @@ body {
 
 @media (max-width: $tablet-width) {
     .container {
-        width: 92%;
+        width: 96%;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: $mobile-width) {
     .container {
-        width: 92%;
+        width: 96%;
+        margin: 0 auto;
     }
 }

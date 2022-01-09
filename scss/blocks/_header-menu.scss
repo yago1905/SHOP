@@ -6,12 +6,17 @@
   background: white;
   padding-left: 32px;
   display: none;
-  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  
+  @include mobile {
+    left: -190px;
+  }
 }
 
 .header__button:hover +.header__menu,
 .header__button:focus +.header__menu {
   display: block;
+  z-index: 99999;
 }
 
 .header__nav-group{

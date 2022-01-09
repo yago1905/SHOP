@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <title>Shop</title>
+    <title>Cart</title>
   </head>
 
   <body>
@@ -19,7 +19,7 @@
       <div class="container">
         <div class="header__wrp">
           <div>
-            <a href="#"
+            <a href="/index.html"
               ><img class="header__logo" src="img/logo.svg" alt="logo"
             /></a>
             <img class="header__search" src="img/poisk.svg" alt="poisk" />
@@ -144,175 +144,130 @@
       </div>
     </header>
     <main>
-      <section class="brand">
-        <div class="brand__box">
-          <img
-            class="brand__img"
-            src="img/man.png"
-            alt="man"
-            width="800"
-            min-height="765"
-          />
-          <div class="brand__title-wrp">
-            <h1 class="brand__title">
-              the brand
-              <span class="brand__sub-title"
-                >of luxerious
-                <span class="brand__sub-title-pink">fashion</span></span
-              >
-            </h1>
-          </div>
+      <section class="category">
+        <h2 class="visually-hidden">shopping cart</h2>
+        <div class="category__title-wrp container">
+          <h1 class="category__title">shopping cart</h1>
         </div>
       </section>
-      <section class="sales container">
-        <h2 class="visually-hidden">sales</h2>
-        <ul class="sales__list">
-          <li class="sales__item sales__item-woman">
-            <p class="sales__item-text">30% off</p>
-            <h3 class="sales__item-title">for women</h3>
-          </li>
-          <li class="sales__item sales__item-man">
-            <p class="sales__item-text">hot deal</p>
-            <h3 class="sales__item-title">for men</h3>
-          </li>
-          <li class="sales__item sales__item-kids">
-            <p class="sales__item-text">new arrivals</p>
-            <h3 class="sales__item-title">for kids</h3>
-          </li>
-          <li class="sales__item sales__item-shoes">
-            <p class="sales__item-text">luxirous & trendy</p>
-            <h3 class="sales__item-title">accesories</h3>
-          </li>
-        </ul>
-      </section>
-      <section class="products container">
-        <h2 class="products__title">fetured items</h2>
-        <p class="products__text">
-          Shop for items based on what we featured in this week
-        </p>
-        <div class="products__list">
-          <div class="products__item">
-            <img
-              class="products__item-img"
-              src="img/fetured-1.png"
-              alt="fetured-1"
-            />
-            <div class="overlay"></div>
-            <button type="button" class="overlay__button">add to cart</button>
-            <h3 class="products__item-title">ellery x m'o capsule</h3>
-            <p class="products__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              australian arbiter of cool kym ellery teams up with moda operandi.
-            </p>
-            <p class="products__item-link">$52.00</p>
+      <section class="shoping-cart container">
+        <div class="cart">
+          <div class="cart__list">
+            <div>
+              <button type="button" class="cart__list-close" aria-label="Close">
+                <img
+                  class="cart__list-close--img"
+                  src="img/X.png"
+                  alt="close"
+                />
+              </button>
+              <img class="cart__images" src="img/fetured-4.png" alt="" />
+            </div>
+            <div class="cart__item">
+              <h2 class="cart__item-title">mango people</h2>
+              <h3 class="cart__item-title">t-shirt</h3>
+              <p class="cart__item-text">price: $300</p>
+              <p class="cart__item-text">color: red</p>
+              <p class="cart__item-text">size: xl</p>
+              <p class="cart__item-text">
+                quantity:
+                <span>
+                  <input
+                    type="number"
+                    min="0"
+                    value="1"
+                    step="1"
+                    class="cart__item-text--quantity"
+                    placeholder="2"
+                /></span>
+              </p>
+            </div>
           </div>
-          <div class="products__item">
-            <img
-              class="products__item-img"
-              src="img/fetured-2.png"
-              alt="fetured-2"
-            />
-            <div class="overlay"></div>
-            <button type="button" class="overlay__button">add to cart</button>
-            <h3 class="products__item-title">ellery x m'o capsule</h3>
-            <p class="products__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              australian arbiter of cool kym ellery teams up with moda operandi.
-            </p>
-            <p class="products__item-link">$52.00</p>
+          <div class="cart__list">
+            <div>
+              <button type="button" class="cart__list-close" aria-label="Close">
+                <img
+                  class="cart__list-close--img"
+                  src="img/X.png"
+                  alt="close"
+                />
+              </button>
+              <img class="cart__images" src="img/fetured-2.png" alt="" />
+            </div>
+            <div class="cart__item">
+              <h2 class="cart__item-title">mango people</h2>
+              <h3 class="cart__item-title">t-shirt</h3>
+              <p class="cart__item-text">price: $300</p>
+              <p class="cart__item-text">color: red</p>
+              <p class="cart__item-text">size: xl</p>
+              <p class="cart__item-text">
+                quantity:
+                <span>
+                  <input
+                    type="number"
+                    min="0"
+                    value="1"
+                    step="1"
+                    class="cart__item-text--quantity"
+                    placeholder="2"
+                /></span>
+              </p>
+            </div>
           </div>
-          <div class="products__item">
-            <img
-              class="products__item-img"
-              src="img/fetured-3.png"
-              alt="fetured-3"
-            />
-            <div class="overlay"></div>
-            <button type="button" class="overlay__button">add to cart</button>
-            <h3 class="products__item-title">ellery x m'o capsule</h3>
-            <p class="products__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              australian arbiter of cool kym ellery teams up with moda operandi.
-            </p>
-            <p class="products__item-link">$52.00</p>
+          <div class="cart__buttons">
+            <button type="submit" class="cart__buttons-box">
+              Clear shopping cart
+            </button>
+            <button type="submit" class="cart__buttons-box">
+              Continue shopping
+            </button>
           </div>
-          <div class="products__item">
-            <img
-              class="products__item-img"
-              src="img/fetured-4.png"
-              alt="fetured-4"
-            />
-            <div class="overlay"></div>
-            <button type="button" class="overlay__button">add to cart</button>
-            <h3 class="products__item-title">ellery x m'o capsule</h3>
-            <p class="products__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              australian arbiter of cool kym ellery teams up with moda operandi.
-            </p>
-            <p class="products__item-link">$52.00</p>
-          </div>
-          <div class="products__item">
-            <img
-              class="products__item-img"
-              src="img/fetured-5.png"
-              alt="fetured-5"
-            />
-            <div class="overlay"></div>
-            <button type="button" class="overlay__button">add to cart</button>
-            <h3 class="products__item-title">ellery x m'o capsule</h3>
-            <p class="products__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              australian arbiter of cool kym ellery teams up with moda operandi.
-            </p>
-            <p class="products__item-link">$52.00</p>
-          </div>
-          <divi class="products__item">
-            <img
-              class="products__item-img"
-              src="img/fetured-6.png"
-              alt="fetured-6"
-            />
-            <div class="overlay"></div>
-            <button type="button" class="overlay__button">add to cart</button>
-            <h3 class="products__item-title">ellery x m'o capsule</h3>
-            <p class="products__item-desc">
-              Known for her sculptural takes on traditional tailoring,
-              australian arbiter of cool kym ellery teams up with moda operandi.
-            </p>
-            <p class="products__item-link">$52.00</p>
-          </divi>
         </div>
-        <button class="button">browse all product</button>
-      </section>
-      <section class="advantages">
-        <div class="container">
-          <h2 class="visually-hidden">to buyers</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img src="img/delivery.png" alt="delivery" />
-              <h3 class="advantages__item-title">free delivery</h3>
-              <p class="advantages__item-text">
-                worldwide delivery on all. authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img src="img/procent.png" alt="sale" />
-              <h3 class="advantages__item-title">sales & discounts</h3>
-              <p class="advantages__item-text">
-                worldwide delivery on all. authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img src="img/assurance.png" alt="assurance" />
-              <h3 class="advantages__item-title">quality assurance</h3>
-              <p class="advantages__item-text">
-                worldwide delivery on all. authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </li>
-          </ul>
+        <div class="shipping">
+          <fieldset>
+            <legend class="visually-hidden">shipping adress</legend>
+            <label class="shipping__city">shipping adress</label>
+            <form action="#">
+              <input
+                type="text"
+                class="shipping__box"
+                placeholder="Bangladesh"
+              />
+            </form>
+            <label class="visually-hidden">State</label>
+            <form action="#">
+              <input type="text" class="shipping__box" placeholder="State" />
+            </form>
+            <form action="#">
+              <label class="visually-hidden">Postcode / Zip</label>
+              <input
+                type="zip"
+                class="shipping__box"
+                placeholder="Postcode / Zip"
+              />
+            </form>
+            <div>
+              <button type="submit" class="shipping__submit">
+                get a quote
+              </button>
+            </div>
+          </fieldset>
+          <div class="shipping__total">
+            <lu class="shipping__total--sub-total">
+              <li>sub total</li>
+              <li>$900</li>
+            </lu>
+            <lu class="shipping__total--grand-total">
+              <li>grand total</li>
+              <li>$900</li>
+            </lu>
+            <div class="shipping__checkout">
+              <hr class="shipping__hr" />
+              <button type="submit" class="checkout">
+                proceed to checkout
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
