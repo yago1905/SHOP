@@ -114,12 +114,35 @@
     }
 
     .cart__buttons-box {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        box-sizing: border-box;
         color: #575757;
+        cursor: pointer;
+        display: inline-flex;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding: 16px 39px;
+        position: relative;
+        transition: box-shadow .15s, transform .15s;
+        user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        @include font (14px, 17px, 300);
+
+        /*color: #575757;
         width: 235px;
         height: 50px;
         background-color: transparent;
         border: 1px solid #A4A4A4;
-        margin-top: 73px;
+        margin-top: 73px;*/
 
         @include mobile {
             @include font (12px, 14px);
@@ -129,10 +152,20 @@
         }
     }
 
-    .cart__buttons-box:active {
-        opacity: .5;
+    .cart__buttons-box:hover {
+        box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+        /*opacity: .5;
         background: #575757;
-        color: #fff;
+        color: #fff;*/
     }
 
+    .cart__buttons-box:focus {
+        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+
+    .cart__buttons-box:active {
+        box-shadow: #D6D6E7 0 3px 7px inset;
+        transform: translateY(2px);
+    }
 }
