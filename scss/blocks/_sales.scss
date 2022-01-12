@@ -5,22 +5,39 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+      width: 33%;
+      min-height: 167px;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-height: 247px;
+      margin: 32px 0 0 0;
+    }
   }
   
   .sales__item-woman {
     background-image: url(../img/sale-w.png);
+    background-color: #4b4341;
   }
   
   .sales__item-man {
     background-image: url(../img/sale-m.png);
+    background-color: #4b4341;
   }
   
   .sales__item-kids {
     background-image: url(../img/sale-k.png);
+    background-color: #4b4341;
   }
   
   .sales__item-shoes {
     background-image: url(../img/sale-accesories.png);
+    background-color: #4b4341;
     width: 100%;
     margin: 30px 0 97px;
   }

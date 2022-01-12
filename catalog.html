@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Shop</title>
-  </head>
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <title>catalog</title>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__wrp">
           <div>
-            <a href="#"
+            <a href="index.html"
               ><img class="header__logo" src="img/logo.svg" alt="logo"
             /></a>
             <img class="header__search" src="img/poisk.svg" alt="poisk" />
@@ -144,54 +143,150 @@
       </div>
     </header>
     <main>
-      <section class="brand">
-        <div class="brand__box">
-          <img
-            class="brand__img"
-            src="img/man.png"
-            alt="man"
-            width="800"
-            min-height="765"
-          />
-          <div class="brand__title-wrp">
-            <h1 class="brand__title">
-              the brand
-              <span class="brand__sub-title"
-                >of luxerious
-                <span class="brand__sub-title-pink">fashion</span></span
-              >
-            </h1>
+      <section class="category">
+        <h2 class="visually-hidden">new arrivals</h2>
+        <div class="category__title-wrp container">
+          <h1 class="category__title">new arrivals</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">home</a></li>
+              <li class="breadcrumb-item"><a href="#">woman</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                new arrivals
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section class="catalog container">
+        <div class="catalog__filter">
+          <div class="dropdown">
+            <button
+              class="btn catalog__filter-title"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              filter
+              <img src="./img/filter.svg" alt="filter" />
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">s</a></li>
+              <li><a class="dropdown-item" href="#">m</a></li>
+              <li><a class="dropdown-item" href="#">l</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog__sort">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              trending now
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu--box"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> white</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> black</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> red</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              size
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu--box"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> s</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> m</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> l</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> xl</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> xxl</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              price
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu--box"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> 20 $</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> 35 $</label
+                >
+              </li>
+              <li>
+                <label class="dropdown-checkbox"
+                  ><input type="checkbox" /> 50 $</label
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="sales container">
-        <h2 class="visually-hidden">sales</h2>
-        <ul class="sales__list">
-          <li class="sales__item sales__item-woman">
-            <p class="sales__item-text">30% off</p>
-            <h3 class="sales__item-title">for women</h3>
-          </li>
-          <li class="sales__item sales__item-man">
-            <p class="sales__item-text">hot deal</p>
-            <h3 class="sales__item-title">for men</h3>
-          </li>
-          <li class="sales__item sales__item-kids">
-            <p class="sales__item-text">new arrivals</p>
-            <h3 class="sales__item-title">for kids</h3>
-          </li>
-          <li class="sales__item sales__item-shoes">
-            <p class="sales__item-text">luxirous & trendy</p>
-            <h3 class="sales__item-title">accesories</h3>
-          </li>
-        </ul>
-      </section>
       <section class="products container">
-        <h2 class="products__title">fetured items</h2>
-        <p class="products__text">
-          Shop for items based on what we featured in this week
-        </p>
         <div class="products__list">
-          <div class="products__item">
+          <div class="products__item products__item--none">
             <img
               class="products__item-img"
               src="img/fetured-1.png"
@@ -209,7 +304,52 @@
           <div class="products__item">
             <img
               class="products__item-img"
-              src="img/fetured-2.png"
+              src="img/card-10.png"
+              alt="fetured-1"
+            />
+            <div class="overlay"></div>
+            <button type="button" class="overlay__button">add to cart</button>
+            <h3 class="products__item-title">ellery x m'o capsule</h3>
+            <p class="products__item-desc">
+              Known for her sculptural takes on traditional tailoring,
+              australian arbiter of cool kym ellery teams up with moda operandi.
+            </p>
+            <p class="products__item-link">$52.00</p>
+          </div>
+          <div class="products__item">
+            <img
+              class="products__item-img"
+              src="img/card-11.png"
+              alt="fetured-1"
+            />
+            <div class="overlay"></div>
+            <button type="button" class="overlay__button">add to cart</button>
+            <h3 class="products__item-title">ellery x m'o capsule</h3>
+            <p class="products__item-desc">
+              Known for her sculptural takes on traditional tailoring,
+              australian arbiter of cool kym ellery teams up with moda operandi.
+            </p>
+            <p class="products__item-link">$52.00</p>
+          </div>
+          <div class="products__item">
+            <img
+              class="products__item-img"
+              src="img/card-12.png"
+              alt="fetured-1"
+            />
+            <div class="overlay"></div>
+            <button type="button" class="overlay__button">add to cart</button>
+            <h3 class="products__item-title">ellery x m'o capsule</h3>
+            <p class="products__item-desc">
+              Known for her sculptural takes on traditional tailoring,
+              australian arbiter of cool kym ellery teams up with moda operandi.
+            </p>
+            <p class="products__item-link">$52.00</p>
+          </div>
+          <div class="products__item">
+            <img
+              class="products__item-img"
+              src="img/card-7.png"
               alt="fetured-2"
             />
             <div class="overlay"></div>
@@ -224,7 +364,7 @@
           <div class="products__item">
             <img
               class="products__item-img"
-              src="img/fetured-3.png"
+              src="img/card-8.png"
               alt="fetured-3"
             />
             <div class="overlay"></div>
@@ -239,7 +379,7 @@
           <div class="products__item">
             <img
               class="products__item-img"
-              src="img/fetured-4.png"
+              src="img/card-9.png"
               alt="fetured-4"
             />
             <div class="overlay"></div>
@@ -254,7 +394,7 @@
           <div class="products__item">
             <img
               class="products__item-img"
-              src="img/fetured-5.png"
+              src="img/fetured-1.png"
               alt="fetured-5"
             />
             <div class="overlay"></div>
@@ -266,10 +406,10 @@
             </p>
             <p class="products__item-link">$52.00</p>
           </div>
-          <divi class="products__item">
+          <div class="products__item">
             <img
               class="products__item-img"
-              src="img/fetured-6.png"
+              src="img/fetured-4.png"
               alt="fetured-6"
             />
             <div class="overlay"></div>
@@ -280,9 +420,27 @@
               australian arbiter of cool kym ellery teams up with moda operandi.
             </p>
             <p class="products__item-link">$52.00</p>
-          </divi>
+          </div>
         </div>
-        <button class="button">browse all product</button>
+        <div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </section>
       <section class="advantages">
         <div class="container">
@@ -407,5 +565,6 @@
         </ul>
       </section>
     </footer>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
